@@ -1,4 +1,5 @@
-﻿using BlackJackGame.Models;
+﻿using BlackjackGame.Models;
+using BlackJackGame.Models;
 using Xunit;
 
 namespace BlackJackGame.Tests.Models

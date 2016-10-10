@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using BlackjackGame.Models;
 using BlackJackGame.Models;
 using BlackJackGame.Tests.Models.DeckStubs;
 using Xunit;

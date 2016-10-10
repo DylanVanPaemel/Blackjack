@@ -1,4 +1,5 @@
-﻿using BlackJackGame.Models;
+﻿using BlackjackGame.Models;
+using BlackJackGame.Models;
 using Xunit;
 
 
@@ -21,22 +22,25 @@ namespace BlackJackGame.Tests.Models {
             Assert.True(card.FaceUp);
         }
 
-        [Fact(Skip = "Not yet implemented")]
+        [Fact]
         public void TurnCard_CardFaceUp_TurnsCardToFaceDown() {
             BlackJackCard card = new BlackJackCard(Suit.Hearts, FaceValue.Ace);
             card.TurnCard();
             card.TurnCard();
+            Assert.False(card.FaceUp);
         }
 
-        [Fact(Skip = "Not yet implemented")]
+        [Fact]
         public void Value_CardFaceUp_GivesCorrectValue() {
             BlackJackCard card = new BlackJackCard(Suit.Hearts, FaceValue.King);
             card.TurnCard();
+            Assert.Equal(10,card.Value);
         }
 
-        [Fact(Skip = "Not yet implemented")]
+        [Fact]
         public void Value_CardFaceDown_IsZero() {
            BlackJackCard card = new BlackJackCard(Suit.Hearts, FaceValue.Ace);
+            Assert.Equal(0,card.Value);
         }
     }
 }
