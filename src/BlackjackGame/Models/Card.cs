@@ -13,7 +13,8 @@ namespace BlackjackGame.Models
 
         public Card(Suit suit, FaceValue faceValue)
         {
-            
+            this.FaceValue = faceValue;
+            this.Suit = suit;
         }
        
     }

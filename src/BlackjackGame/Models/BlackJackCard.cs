@@ -11,7 +11,7 @@ namespace BlackjackGame.Models
         public BlackJackCard(Suit suit, FaceValue faceValue) : base(suit, faceValue)
         {
             FaceUp = false;
-            Value = 0;
+            Value =  0;
 
         }
 
